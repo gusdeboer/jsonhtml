@@ -1,12 +1,12 @@
 # JSONHTML
 JSON goes in HTML comes out, pretty straightforward ;) It might seen like a lot of JSON for some HTML, but it's better then having HTML in your javascript.
 
-JSONHTML is only 1,21kb so why not just use it and keep your code clean.
+JSONHTML is only 1,22kb so why not just use it and keep your code clean.
 
 ## Installation
 TODO: Describe the installation process 
-
 ``<script src="dist/jsonhtml.min.js" type="application/javascript"></script>``
+
 ## Usage
 Define your JSON object, nest away!
 ```javascript
@@ -26,6 +26,7 @@ var json = {
     }
 };
 ```
+
 ### Adding attributes to elements
 ```javascript
 {
@@ -41,11 +42,13 @@ Output:
 ```html
 <a href="/your-page" class="btn">Go to page</a>
 ```
+
 ### Multiple classes
 ```javascript
 {
     tag: 'a',
     attr: {
+        href: '/your-page',
         class: ['btn', 'green', 'large']
     }
 }
@@ -54,6 +57,7 @@ Output:
 ```html
 <a href="/your-page" class="btn green large">Go to page</a>
 ```
+
 ### Inner text replacement
 ```javascript
 {
@@ -65,6 +69,7 @@ Output:
 ```html
 <h1>Change this text because I like stuff</h1>
 ```
+
 ### Callbacks
 ```javascript
 var json = {
@@ -75,8 +80,10 @@ var json = {
     onComplete: 'otherFunction' // Call function by string
 };
 ```
+
 ## Examples
 Here are a few examples that could be useful
+
 ### Table
 ```javascript
 {
@@ -142,6 +149,7 @@ Output:
     </tr>
 </table>
 ```
+
 ### Form
 ```javascript
 {
@@ -153,9 +161,7 @@ Output:
     children: [
         {
             tag: 'div',
-            attr: {
-                class: 'input-container'
-            },
+            attr: { class: 'input-container' },
             children: [
                 {
                     tag: 'label',
@@ -176,9 +182,7 @@ Output:
         },
         {
             tag: 'div',
-            attr: {
-                class: 'input-container'
-            },
+            attr: { class: 'input-container' },
             children: [
                 {
                     tag: 'label',
@@ -198,9 +202,7 @@ Output:
         },
         {
             tag: 'div',
-            attr: {
-                class: 'input-container'
-            },
+            attr: { class: 'input-container' },
             children: [
                 {
                     tag: 'input',
@@ -227,5 +229,6 @@ Output:
     </div>
 </form>
 ```
+
 ## Changelog
 1.0 Inital version
