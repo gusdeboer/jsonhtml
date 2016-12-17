@@ -1,5 +1,8 @@
 # JSONHTML
-JSON goes in HTML comes out, pretty straightforward ;)
+JSON goes in HTML comes out, pretty straightforward ;) It might seen like a lot of JSON for some HTML, but it's better then having HTML in your javascript.
+
+JSONHTML is only 1,21kb so why not just use it and keep your code clean.
+
 ## Installation
 TODO: Describe the installation process 
 
@@ -50,16 +53,6 @@ Output:
 Output:
 ```html
 <a href="/your-page" class="btn green large">Go to page</a>
-```
-### Multiple classes
-```javascript
-{
-    tag: 'a',
-    inner: 'Go to page',
-    attr: {
-        class: ['btn', 'green', 'large']
-    }
-}
 ```
 ### Inner text replacement
 ```javascript
@@ -149,7 +142,90 @@ Output:
     </tr>
 </table>
 ```
+### Form
+```javascript
+{
+    tag: 'form',
+    attr: {
+        method: 'post',
+        action: '/some-page'
+    },
+    children: [
+        {
+            tag: 'div',
+            attr: {
+                class: 'input-container'
+            },
+            children: [
+                {
+                    tag: 'label',
+                    inner: 'Name',
+                    attr: {
+                        for: 'Name'
+                    }
+                },
+                {
+                    tag: 'input',
+                    attr: {
+                        type: 'text',
+                        id: 'Name',
+                        placeholder: 'Enter your name'
+                    }
+                }
+            ]
+        },
+        {
+            tag: 'div',
+            attr: {
+                class: 'input-container'
+            },
+            children: [
+                {
+                    tag: 'label',
+                    inner: 'E-mail',
+                    attr: {
+                        for: 'Email'
+                    }
+                },
+                {
+                    tag: 'input',
+                    attr: {
+                        type: 'email',
+                        id: 'Email'
+                    }
+                }
+            ]
+        },
+        {
+            tag: 'div',
+            attr: {
+                class: 'input-container'
+            },
+            children: [
+                {
+                    tag: 'input',
+                    attr: {
+                        type: 'submit',
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+Output:
+```html
+<form action="/some-page" method="post">
+    <div class="input-container">
+        <label for="Name">Name</label><input id="Name" placeholder="Enter your name" type="text">
+    </div>
+    <div class="input-container">
+        <label for="Email">E-mail</label><input id="Email" type="email">
+    </div>
+    <div class="input-container">
+        <input type="submit">
+    </div>
+</form>
+```
 ## Changelog
 1.0 Inital version
-## License
-TODO: Write license

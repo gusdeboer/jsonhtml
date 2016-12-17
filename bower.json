@@ -1,0 +1,17 @@
+{
+  "name": "jsonhtml",
+  "homepage": "gusdeboer.nl",
+  "authors": [
+    "Gus de Boer"
+  ],
+  "description": "JSON goes in, HTML comes out",
+  "main": "dist/jsonhtml.js",
+  "keywords": [
+    "json",
+    "html",
+    "json2html",
+    "jsontohtml",
+    "jsonhtml"
+  ],
+  "license": "MIT"
+}
