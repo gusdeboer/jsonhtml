@@ -1,0 +1,23 @@
+{
+  "name": "jsonhtml",
+  "version": "1.0.0",
+  "description": "JSON goes in, HTML comes out",
+  "main": "dist/jsonhtml.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gusdeboer/jsonhtml.git"
+  },
+  "keywords": [
+    "json",
+    "html",
+    "jsonhtml",
+    "json2html",
+    "jsontohtml"
+  ],
+  "author": "Gus de Boer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gusdeboer/jsonhtml/issues"
+  },
+  "homepage": "https://github.com/gusdeboer/jsonhtml"
+}

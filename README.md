@@ -4,7 +4,16 @@ JSON goes in HTML comes out, pretty straightforward ;) It might seen like a lot 
 JSONHTML is only 1,22kb so why not just use it and keep your code clean.
 
 ## Installation
-TODO: Describe the installation process 
+### Bower
+``
+bower install jsonhtml
+``
+
+## NPM
+``
+npm install jsonhtml
+``
+
 ``<script src="dist/jsonhtml.min.js" type="application/javascript"></script>``
 
 ## Usage
