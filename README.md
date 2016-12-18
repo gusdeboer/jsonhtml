@@ -34,6 +34,9 @@ var json = {
         ]
     }
 };
+
+var JSONHTML = new JSONHTML();
+var html     = JSONHTML.parse(json);
 ```
 
 ### Adding attributes to elements
