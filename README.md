@@ -9,11 +9,12 @@ JSONHTML is only 1,22kb so why not just use it and keep your code clean.
 bower install jsonhtml
 ``
 
-## NPM
+### NPM
 ``
 npm install jsonhtml
 ``
 
+### Include script
 ``<script src="dist/jsonhtml.min.js" type="application/javascript"></script>``
 
 ## Usage
