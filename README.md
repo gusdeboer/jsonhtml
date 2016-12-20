@@ -245,3 +245,6 @@ Output:
 
 ## Changelog
 1.0 Inital version
+
+## TODO
+- Edit class to create elements with or without the DOM key
