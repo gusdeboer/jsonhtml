@@ -248,3 +248,4 @@ Output:
 
 ## TODO
 - Edit class to create elements with or without the DOM key
+- Remove select from non closable tags
