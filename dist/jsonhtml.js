@@ -11,12 +11,23 @@ var JSONHTML = (function JSONHTML() {
      * @private
      */
     var _nonClose = [
-        'meta',
-        'img',
-        'hr',
+        'area',
+        'base',
         'br',
+        'col',
+        'command',
+        'embed',
+        'hr',
+        'img',
         'input',
-        'select'
+        'keygen',
+        'link',
+        'menuitem',
+        'meta',
+        'param',
+        'source',
+        'track',
+        'wbr',
     ];
 
     /**
