@@ -5,17 +5,25 @@ JSONHTML is only 1,22kb so why not just use it and keep your code clean.
 
 ## Installation
 ### Bower
-``
+```bash
 bower install jsonhtml
-``
+```
 
 ### NPM
-``
+```bash
 npm install jsonhtml
-``
+```
 
 ### Include script
-``<script src="dist/jsonhtml.min.js" type="application/javascript"></script>``
+```html
+<script src="dist/jsonhtml.min.js" type="application/javascript"></script>
+```
+
+## Development
+
+```bash
+npm install
+```
 
 ## Usage
 Define your JSON object, nest away!
